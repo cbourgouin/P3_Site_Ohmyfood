@@ -1,0 +1,82 @@
+.logo {
+    height: 63px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__img {
+        width: 164px;
+    }   
+}
+
+.localisation {
+    height: 49px;
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.17) inset;
+    &__icon {
+        margin: auto 20px auto 28%;
+        position: relative;
+        top: -1px;
+    }
+    &__texte {
+        font-size: 15px;
+    }
+}
+
+.introduction {
+    height: 288px;
+    width: 100%;
+    padding: 42px 0 50px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    &__titre {
+        margin: 0 65px 0 65px;
+    }
+    &__phrase {
+        margin: 15px 40px 0 40px;
+    }
+    &__button {
+        margin-top: 30px;
+    }
+}
+
+.fonctionnement {
+    height: 440px;
+    width: 100%;
+    padding: 50px 0 0 0;
+    &__titre {
+        margin: 0 0 30px 20px;
+    }
+}
+
+.etape {
+    height: 74px;
+    width: 322px;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin: 0 auto 25px 35px;
+    &__num {
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        border-radius: 12px;
+        color: white;
+        text-align: center;
+        background-color: $couleur-primaire;
+        position: relative;
+        left: -12px;
+    }
+    &__icon {
+        color: #7E7E7E;
+        margin: auto 20px auto 10px;
+    }
+    &__description {
+        font-weight: bold;
+    }
+}
+
