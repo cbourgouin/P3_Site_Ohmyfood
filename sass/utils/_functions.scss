@@ -1,0 +1,9 @@
+@function lightness-shift($colour) {
+    @if (lightness($colour) < 25%) {
+        @return lighten($colour, 35%);
+    }
+
+    @else {
+        @return darken($colour, 35%);
+    }
+}

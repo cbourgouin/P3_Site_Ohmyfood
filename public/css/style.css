@@ -3,11 +3,15 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 375px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
 
-.titre {
+.nomdusite {
   font-family: "Shrikhand", cursive;
 }
 
@@ -31,6 +35,10 @@ h2 {
   font-size: 15px;
 }
 
+.titre {
+  margin: 0 0 30px 20px;
+}
+
 .logo {
   height: 63px;
   width: 100%;
@@ -48,7 +56,7 @@ h2 {
   background-color: #ebebeb;
   display: flex;
   align-items: center;
-  box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.17) inset;
+  box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.21);
 }
 .localisation__icon {
   margin: auto 20px auto 28%;
@@ -81,9 +89,6 @@ h2 {
   width: 100%;
   padding: 50px 0 0 0;
 }
-.fonctionnement__titre {
-  margin: 0 0 30px 20px;
-}
 
 .etape {
   height: 74px;
@@ -93,6 +98,7 @@ h2 {
   background-color: #F6F6F6;
   border-radius: 20px;
   margin: 0 auto 25px 35px;
+  box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.21);
 }
 .etape__num {
   height: 24px;
@@ -111,6 +117,104 @@ h2 {
 }
 .etape__description {
   font-weight: bold;
+}
+
+.restaurants {
+  background-color: #f7f7f7;
+  padding: 50px 0 65px 0;
+}
+
+.card {
+  height: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.21);
+}
+.card__image {
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+}
+.card__titre {
+  margin: 15px auto 5px 15px;
+  font-size: 17px;
+}
+.card__localisation {
+  margin: 0 auto auto 15px;
+  font-size: 16px;
+}
+.card__hearth {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: -35px;
+  right: -290px;
+  font-size: 25px;
+}
+.card__hearth #love {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+  z-index: 3;
+}
+.card__hearth #love:checked + .fa-solid {
+  opacity: 1;
+}
+.card__hearth .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #9356DC;
+  opacity: 0;
+  z-index: 2;
+}
+.card__hearth .fa-regular {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card__newCard {
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  position: relative;
+  top: -245px;
+  right: -245px;
+  color: #2c9c81;
+}
+.card__newCard--hidden {
+  display: none;
+}
+
+.footer {
+  background-color: #353535;
+  height: 200px;
+  color: white;
+  padding: 25px 0 0 0;
+}
+.footer__list {
+  margin: 0 auto 0 25px;
+}
+.footer .titre {
+  margin: 0 auto 25px 0;
+}
+.footer dd {
+  margin: 0 auto 10px 0;
+}
+.footer i {
+  width: 25px;
+}
+.footer .liens {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

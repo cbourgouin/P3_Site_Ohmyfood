@@ -1,3 +1,7 @@
+.titre {
+    margin: 0 0 30px 20px;
+}
+
 .logo {
     height: 63px;
     width: 100%;
@@ -12,10 +16,10 @@
 .localisation {
     height: 49px;
     width: 100%;
-    background-color: #ebebeb;
+    background-color: $gris;
     display: flex;
     align-items: center;
-    box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.17) inset;
+    @include ombre;
     &__icon {
         margin: auto 20px auto 28%;
         position: relative;
@@ -30,10 +34,11 @@
     height: 288px;
     width: 100%;
     padding: 42px 0 50px 0;
-    background-color: #f7f7f7;
+    background-color: $gris-clair;
     text-align: center;
     &__titre {
         margin: 0 65px 0 65px;
+
     }
     &__phrase {
         margin: 15px 40px 0 40px;
@@ -47,9 +52,6 @@
     height: 440px;
     width: 100%;
     padding: 50px 0 0 0;
-    &__titre {
-        margin: 0 0 30px 20px;
-    }
 }
 
 .etape {
@@ -60,6 +62,7 @@
     background-color: #F6F6F6;
     border-radius: 20px;
     margin: 0 auto 25px 35px;
+    @include ombre;
     &__num {
         height: 24px;
         width: 24px;
@@ -79,4 +82,105 @@
         font-weight: bold;
     }
 }
+
+.restaurants {
+    background-color: $gris-clair;
+    padding: 50px 0 65px 0;
+}
+
+.card {
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    @include ombre;
+    &__image {
+        height: 174px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__titre {
+        margin: 15px auto 5px 15px;
+        font-size: 17px;
+    }
+    &__localisation {
+        margin: 0 auto auto 15px;
+        font-size: 16px;
+    }
+    &__hearth {
+        height: 25px;
+        width: 25px;
+        position: relative;
+        top: -35px;
+        right: -290px;
+        font-size: 25px;
+        #love {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: relative;
+            z-index: 3;
+        }
+        #love:checked{
+            & + .fa-solid {
+                opacity: 1;
+            }
+        }
+        .fa-solid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $couleur-primaire;
+            opacity: 0;
+            z-index: 2;
+        }
+        .fa-regular {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__newCard {
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+        background-color: $couleur-tertiaire;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        position: relative;
+        top: -245px;
+        right: -245px;
+        color: lightness-shift($couleur-tertiaire);
+        &--hidden {
+            display: none;
+        }
+    }
+}
+
+.footer {
+    background-color: $gris-foncer;
+    height: 200px;
+    color: white;
+    padding: 25px 0 0 0;
+    &__list {
+        margin: 0 auto 0 25px;
+    }
+    .titre {
+        margin: 0 auto 25px 0;
+    }
+    dd {
+        margin: 0 auto 10px 0;
+    }
+    i {
+        width: 25px;
+    }
+    .liens {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 

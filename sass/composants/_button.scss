@@ -5,7 +5,7 @@
     border: 0;
     color: white;
     background: $couleur-primaire;
-    background: linear-gradient(355deg,$couleur-primaire 0%, $couleur-secondaire 90%);
+    background: $degrade;
     box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.21);
     font-size: 15px;
   }
