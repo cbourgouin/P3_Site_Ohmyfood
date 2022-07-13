@@ -2,6 +2,8 @@ $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 $degrade: linear-gradient(355deg,$couleur-primaire 0%, $couleur-secondaire 90%);
+$degrade-clair: linear-gradient(355deg,lighten($couleur-primaire, 5%) 0%, lighten($couleur-secondaire, 5%) 90%);
+$degrade-rev: linear-gradient(355deg,$couleur-secondaire, $couleur-primaire 90%);
 $gris-clair: #f7f7f7;
 $gris: #ebebeb;
 $gris-foncer: #353535;

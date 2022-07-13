@@ -6,6 +6,11 @@
     color: white;
     background: $couleur-primaire;
     background: $degrade;
-    box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.21);
+    box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.25);
     font-size: 15px;
+    transition: all 700ms;
+    &:hover {
+      box-shadow: 15px 15px 22px 5px rgba(0,0,0,0.21);
+      background: $degrade-clair;
+    }
   }
