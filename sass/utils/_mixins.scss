@@ -1,3 +1,15 @@
 @mixin ombre {
     box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.21);
 }
+
+@mixin tablette-size {
+    @media screen and (min-width: $tablette) {
+        @content;
+    }
+}
+
+@mixin desktop-size {
+    @media screen and (min-width: $bureau) {
+        @content;
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    background-color: $gris-foncer;
+    height: 200px;
+    color: white;
+    padding: 25px 0 0 0;
+
+    &__list {
+        margin: 0 auto 0 25px;
+    }
+
+    .titre {
+        margin: 0 auto 25px 0;
+    }
+
+    dd {
+        margin: 0 auto 10px 0;
+    }
+
+    i {
+        width: 25px;
+    }
+
+    .liens {
+        color: white;
+    }
+}

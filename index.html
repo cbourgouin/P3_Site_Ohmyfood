@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood</title>
+    <title>ohmyfood | Accueil</title>
     <link rel="stylesheet" href="public/css/normalize.css" />
     <script src="https://kit.fontawesome.com/cb3029fffd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/style.css" />
@@ -15,82 +16,87 @@
         <div class="logo">
             <img class="logo__img" src="public/images/logo/ohmyfood.png" alt="logo de Ohmyfood" />
         </div>
-        <div class="localisation">
-            <i class="fa-solid fa-location-dot localisation__icon"></i>
-            <p class="localisation__texte">Paris, Belleville</p>
-        </div>
     </header>
-    <main>
-        <div class="introduction">
-            <h2 class="introduction__titre">Réservez le menu qui vous convient</h2>
-            <p class="introduction__phrase">Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-            <form class="introduction__button">
+    <main class="accueil">
+        <div class="accueil__localisation">
+            <i class="fa-solid fa-location-dot accueil__localisation__icon"></i>
+            <p class="accueil__ocalisation__texte">Paris, Belleville</p>
+        </div>
+        <div class="accueil__introduction">
+            <h2 class="accueil__introduction__titre">Réservez le menu qui vous convient</h2>
+            <p class="accueil__introduction__phrase">Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+            <form class="accueil__introduction__button">
                 <button class="button">Explorer nos restaurants</button>
             </form>
         </div>
-        <section class="fonctionnement">
-            <h2 class="titre">
-                Fonctionnement
-            </h2>
-            <div class="etape">
-                <div class="etape__num">1</div>
-                <i class="fa-solid fa-mobile-screen-button etape__icon"></i>
-                <p class="etape__description">Choississez un restaurant</p>
-            </div>
-            <div class="etape">
-                <div class="etape__num">2</div>
-                <i class="fa-solid fa-list-ul etape__icon"></i>
-                <p class="etape__description">Composez votre menu</p>
-            </div>
-            <div class="etape">
-                <div class="etape__num">3</div>
-                <i class="fa-solid fa-store etape__icon"></i>
-                <p class="etape__description">Dégustez au restaurant</p>
+        <section class="accueil__fonctionnement">
+            <h2 class="titre">Fonctionnement</h2>
+            <div class="accueil__fonctionnement__conteneur">
+                <div class="etape">
+                    <div class="etape__num">1</div>
+                    <i class="fa-solid fa-mobile-screen-button etape__icon"></i>
+                    <p class="etape__description">Choississez un restaurant</p>
+                </div>
+                <div class="etape">
+                    <div class="etape__num">2</div>
+                    <i class="fa-solid fa-list-ul etape__icon"></i>
+                    <p class="etape__description">Composez votre menu</p>
+                </div>
+                <div class="etape">
+                    <div class="etape__num">3</div>
+                    <i class="fa-solid fa-store etape__icon"></i>
+                    <p class="etape__description">Dégustez au restaurant</p>
+                </div>
             </div>
         </section>
-        <article class="restaurants">
-            <h2 class="titre">
-                Restaurants
-            </h2>
+        <article class="accueil__restaurants">
+            <h2 class="titre">Restaurants</h2>
+            <a href="./public/menu01.html" class="liens">
+                <div class="card">
+                    <img class="card__image" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="restaurant" />
+                    <h3 class="card__titre">La palette de goût</h3>
+                    <p class="card__localisation">Ménilmontant</p>
+                    <form class="hearth">
+                        <input type="checkbox" class="checkbox" />
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </form>
+                    <div class="card__newCard">Nouveau</div>
+                </div>
+            </a>
             <div class="card">
-                <img class="card__image" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant" />
-                <h3 class="card__titre">La palette de goût</h3>
-                <p class="card__localisation">Ménilmontant</p>
-                <form class="card__hearth">
-                    <input type="checkbox" class="like"/>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </form>
-                <div class="card__newCard">Nouveau</div>
-            </div>
-            <div class="card">
-                <img class="card__image" src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant" />
+                <img class="card__image" src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="restaurant" />
                 <h3 class="card__titre">La note enchantée</h3>
                 <p class="card__localisation">Charonne</p>
-                <form class="card__hearth">
-                    <input type="checkbox" class="like"/>
+                <form class="hearth">
+                    <input type="checkbox" class="checkbox" />
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-regular fa-heart"></i>
                 </form>
                 <div class="card__newCard">Nouveau</div>
             </div>
             <div class="card">
-                <img class="card__image" src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant" />
+                <img class="card__image" src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="restaurant" />
                 <h3 class="card__titre">À la française</h3>
                 <p class="card__localisation">Cité Rouge</p>
-                <form class="card__hearth">
-                    <input type="checkbox" class="like"/>
+                <form class="hearth">
+                    <input type="checkbox" class="checkbox" />
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-regular fa-heart"></i>
                 </form>
                 <div class="card__newCard--hidden">Nouveau</div>
             </div>
             <div class="card">
-                <img class="card__image" src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant" />
+                <img class="card__image"
+                    src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="restaurant" />
                 <h3 class="card__titre">Le délice des sens</h3>
                 <p class="card__localisation">Folie-Méricourt</p>
-                <form class="card__hearth">
-                    <input type="checkbox" class="like"/>
+                <form class="hearth">
+                    <input type="checkbox" class="checkbox" />
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-regular fa-heart"></i>
                 </form>
@@ -100,7 +106,7 @@
     </main>
     <footer class="footer">
         <dl class="footer__list">
-            <dt class="nomdusite titre">ohmyfood</dt>
+            <dt class="typonomdusite titre">ohmyfood</dt>
             <dd><a href="#" class="liens"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></dd>
             <dd><a href="#" class="liens"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></dd>
             <dd><a href="#" class="liens">Mentions légales</a></dd>
@@ -108,4 +114,5 @@
         </dl>
     </footer>
 </body>
+
 </html>

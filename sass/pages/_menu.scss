@@ -1,0 +1,73 @@
+.menu {
+
+    &__photo {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__nomDuRestaurant {
+        position: relative;
+        background-color: white;
+        top: -40px;
+        border-radius: 40px 40px 0 0;
+        padding: 35px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        &__titre {
+            margin-bottom: 0;
+        }
+
+        .hearth {
+            margin-right: 40px;
+        }
+    }
+
+    &__entreePlatsDessert {
+    margin-bottom: 40px;
+
+        &__titre {
+            text-decoration: underline;
+            text-decoration-color: $couleur-tertiaire;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 10px;
+        }
+
+        .card {
+            @include ombre;
+            height: 70px;
+            margin: 0 15px 15px 15px;
+            border-radius: 15px;
+            &__contenu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                position: relative;
+                top: -70px;
+                padding: 0 0 0 10px;
+                &__titre {
+                    width: 100%;
+                    margin: 10px 0 5px 0;
+                    font-size: 17px;
+                }
+                &__precision {
+                    margin: 0;
+                    font-size: 16px;
+                }
+                &__prix {
+                    margin: 0 20px 0 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__buttonValidation {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 85px 0;
+        .button {
+            padding: 0 50px 0 50px;
+        }
+    }
+}
