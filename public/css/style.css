@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@keyframes animation_loading_spinner {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  100% {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@keyframes animation_loading_spinner_circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -132,6 +150,46 @@ header .logo__img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.loading_spinner {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3000;
+  width: 100%;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  animation: animation_loading_spinner 1.6s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.loading_spinner__cercle {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  animation: animation_loading_spinner_circle 1.4s cubic-bezier(0.72, 0.01, 0.3, 0.99) infinite;
+}
+.loading_spinner__cercle__entier {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+.loading_spinner__cercle__quart {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 10px solid rgba(255, 255, 255, 0);
+  border-top-color: rgb(255, 255, 255);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
 
 .accueil .liens {
