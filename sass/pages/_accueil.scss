@@ -10,11 +10,13 @@
     animation: animation_loading_spinner 1.6s ease-in-out;
     animation-fill-mode: both;
     animation-delay: 4s;
-    &__cercle{
+
+    &__cercle {
         height: 100px;
         width: 100px;
         margin: auto;
-        animation: animation_loading_spinner_circle 1.4s cubic-bezier(.72,.01,.3,.99) infinite;
+        animation: animation_loading_spinner_circle 1.4s cubic-bezier(.72, .01, .3, .99) infinite;
+
         &__entier {
             position: absolute;
             height: 100px;
@@ -24,6 +26,7 @@
             justify-content: center;
             align-items: center;
         }
+
         &__quart {
             position: absolute;
             height: 100px;

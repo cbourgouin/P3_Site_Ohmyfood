@@ -8,10 +8,7 @@
 
     &:hover {
         cursor: pointer;
-    }
-
-    &:checked {
-        &+.fa-solid {
+        & + .fa-solid {
             opacity: 1;
         }
     }

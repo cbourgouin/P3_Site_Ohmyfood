@@ -124,7 +124,7 @@ header .logo__img {
 .checkbox:hover {
   cursor: pointer;
 }
-.checkbox:checked + .fa-solid {
+.checkbox:hover + .fa-solid {
   opacity: 1;
 }
 
