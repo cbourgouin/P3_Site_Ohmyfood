@@ -27,6 +27,14 @@
     bottom: 0;
   }
 }
+@keyframes animation_check_circles {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -538,6 +546,7 @@ header .logo__img {
   border-radius: 15px;
   display: flex;
   overflow: hidden;
+  position: relative;
 }
 .menu__entreePlatsDessert .card__contenu {
   display: flex;
@@ -563,17 +572,26 @@ header .logo__img {
 .menu__entreePlatsDessert .card__check {
   background-color: #99E2D0;
   position: relative;
+  right: 0;
   width: 0px;
   color: white;
-  text-align: center;
   line-height: 70px;
+  transition: all 500ms ease-out;
 }
 .menu__entreePlatsDessert .card__check .fa-circle-check {
   font-size: 20px;
+  position: relative;
+  left: 20px;
   margin: auto;
 }
+.menu__entreePlatsDessert .card:hover {
+  cursor: pointer;
+}
 .menu__entreePlatsDessert .card:hover .card__check {
-  width: 70px;
+  width: 80px;
+}
+.menu__entreePlatsDessert .card:hover .card__check .fa-circle-check {
+  animation: animation_check_circles 500ms ease-out;
 }
 .menu__buttonValidation {
   width: 100%;

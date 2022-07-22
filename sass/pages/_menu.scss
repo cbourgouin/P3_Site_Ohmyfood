@@ -44,6 +44,7 @@
             border-radius: 15px;
             display: flex;
             overflow: hidden;
+            position: relative;
 
             &__contenu {
                 display: flex;
@@ -73,19 +74,27 @@
             &__check {
                 background-color: $couleur-tertiaire;
                 position: relative;
+                right: 0;
                 width: 0px;
                 color: white;
-                text-align: center;
                 line-height: 70px;
-                .fa-circle-check{
+                transition: all 500ms ease-out;
+
+                .fa-circle-check {
                     font-size: 20px;
+                    position: relative;
+                    left: 20px;
                     margin: auto;
                 }
             }
 
             &:hover {
+                cursor: pointer;
                 .card__check {
-                    width: 70px;
+                    width: 80px;
+                    .fa-circle-check {
+                        animation: animation_check_circles 500ms ease-out;
+                    }
                 }
             }
         }
