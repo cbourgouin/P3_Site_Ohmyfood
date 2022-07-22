@@ -7,3 +7,8 @@
         @return darken($colour, 35%);
     }
 }
+
+@function animation-delay($iteration) {
+    $delay: 200*$iteration;
+    @return $delay;
+}

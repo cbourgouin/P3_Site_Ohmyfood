@@ -1,4 +1,6 @@
 .menu {
+    
+    @include animation-apparition-with-delay;
 
     &__photo {
         width: 100%;
@@ -24,9 +26,10 @@
     }
 
     &__entreePlatsDessert {
-    margin-bottom: 40px;
+        margin-bottom: 40px;
 
         &__titre {
+            @include animation-apparition-with-delay;
             text-decoration: underline;
             text-decoration-color: $couleur-tertiaire;
             text-decoration-thickness: 3px;
@@ -38,6 +41,8 @@
             height: 70px;
             margin: 0 15px 15px 15px;
             border-radius: 15px;
+            position: relative;
+
             &__contenu {
                 display: flex;
                 flex-wrap: wrap;
@@ -45,15 +50,18 @@
                 position: relative;
                 top: -70px;
                 padding: 0 0 0 10px;
+
                 &__titre {
                     width: 100%;
                     margin: 10px 0 5px 0;
                     font-size: 17px;
                 }
+
                 &__precision {
                     margin: 0;
                     font-size: 16px;
                 }
+
                 &__prix {
                     margin: 0 20px 0 0;
                     font-size: 16px;
@@ -66,6 +74,7 @@
         width: 100%;
         text-align: center;
         margin: 0 0 85px 0;
+
         .button {
             padding: 0 50px 0 50px;
         }

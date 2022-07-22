@@ -13,3 +13,15 @@
         @content;
     }
 }
+
+@mixin animation-apparition-with-delay {
+    @for $i from 1 through 12 {
+        .apparition--#{$i} {
+            opacity: 0; 
+            bottom:  -50px;
+            animation: animation_menu_card 1s ease-out;
+            animation-delay: #{animation-delay($i)}ms;
+            animation-fill-mode: both;
+        }
+    }
+}
