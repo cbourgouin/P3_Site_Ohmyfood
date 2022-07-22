@@ -45,17 +45,15 @@
             display: flex;
             overflow: hidden;
             position: relative;
-            height: 70px;
 
             &__contenu {
                 display: flex;
                 justify-content: space-between;
                 padding: 0 0 0 10px;
                 flex: 1;
-                flex-wrap: wrap;
+                flex-direction: column;
 
                 &__titre {
-                    width: 100%;
                     margin: 10px 0 5px 0;
                     font-size: 17px;
                 }
@@ -67,12 +65,13 @@
                     justify-content: space-between;
 
                     &__description {
-                        flex: 1;
                         margin: 0;
+                        width: 270px;
                         font-size: 16px;
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
+                        transition: all 500ms ease-out;
                     }
 
                     &__prix {
@@ -100,11 +99,18 @@
             &:hover {
                 cursor: pointer;
 
-                .card__check {
-                    width: 60px;
+                .card {
 
-                    .fa-circle-check {
-                        animation: animation_check_circles 500ms ease-out;
+                    &__contenu__precision__description {
+                        width: 200px;
+                    }
+
+                    &__check {
+                        width: 60px;
+
+                        .fa-circle-check {
+                            animation: animation_check_circles 500ms ease-out;
+                        }
                     }
                 }
             }
