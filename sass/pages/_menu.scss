@@ -1,5 +1,5 @@
 .menu {
-    
+
     @include animation-apparition-with-delay;
 
     &__photo {
@@ -29,6 +29,7 @@
         margin-bottom: 40px;
 
         &__titre {
+            position: relative;
             @include animation-apparition-with-delay;
             text-decoration: underline;
             text-decoration-color: $couleur-tertiaire;
@@ -41,14 +42,13 @@
             height: 70px;
             margin: 0 15px 15px 15px;
             border-radius: 15px;
-            position: relative;
+            display: flex;
+            overflow: hidden;
 
             &__contenu {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                position: relative;
-                top: -70px;
                 padding: 0 0 0 10px;
 
                 &__titre {
@@ -63,8 +63,29 @@
                 }
 
                 &__prix {
-                    margin: 0 20px 0 0;
                     font-size: 16px;
+                    position: relative;
+                    right: 20px;
+                    bottom: 16px;
+                }
+            }
+
+            &__check {
+                background-color: $couleur-tertiaire;
+                position: relative;
+                width: 0px;
+                color: white;
+                text-align: center;
+                line-height: 70px;
+                .fa-circle-check{
+                    font-size: 20px;
+                    margin: auto;
+                }
+            }
+
+            &:hover {
+                .card__check {
+                    width: 70px;
                 }
             }
         }
