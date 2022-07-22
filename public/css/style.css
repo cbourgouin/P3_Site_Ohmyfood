@@ -547,12 +547,14 @@ header .logo__img {
   display: flex;
   overflow: hidden;
   position: relative;
+  height: 70px;
 }
 .menu__entreePlatsDessert .card__contenu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 0 0 10px;
+  flex: 1;
+  flex-wrap: wrap;
 }
 .menu__entreePlatsDessert .card__contenu__titre {
   width: 100%;
@@ -560,19 +562,25 @@ header .logo__img {
   font-size: 17px;
 }
 .menu__entreePlatsDessert .card__contenu__precision {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__entreePlatsDessert .card__contenu__precision__description {
+  flex: 1;
   margin: 0;
   font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.menu__entreePlatsDessert .card__contenu__prix {
+.menu__entreePlatsDessert .card__contenu__precision__prix {
   font-size: 16px;
-  position: relative;
-  right: 20px;
-  bottom: 16px;
+  margin: 0 20px 0 20px;
 }
 .menu__entreePlatsDessert .card__check {
   background-color: #99E2D0;
-  position: relative;
-  right: 0;
   width: 0px;
   color: white;
   line-height: 70px;
@@ -588,7 +596,7 @@ header .logo__img {
   cursor: pointer;
 }
 .menu__entreePlatsDessert .card:hover .card__check {
-  width: 80px;
+  width: 60px;
 }
 .menu__entreePlatsDessert .card:hover .card__check .fa-circle-check {
   animation: animation_check_circles 500ms ease-out;

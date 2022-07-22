@@ -45,12 +45,14 @@
             display: flex;
             overflow: hidden;
             position: relative;
+            height: 70px;
 
             &__contenu {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 0 0 0 10px;
+                flex: 1;
+                flex-wrap: wrap;
 
                 &__titre {
                     width: 100%;
@@ -59,22 +61,29 @@
                 }
 
                 &__precision {
-                    margin: 0;
-                    font-size: 16px;
-                }
+                    display: flex;
+                    flex: 1;
+                    flex-direction: row;
+                    justify-content: space-between;
 
-                &__prix {
-                    font-size: 16px;
-                    position: relative;
-                    right: 20px;
-                    bottom: 16px;
+                    &__description {
+                        flex: 1;
+                        margin: 0;
+                        font-size: 16px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+
+                    &__prix {
+                        font-size: 16px;
+                        margin: 0 20px 0 20px;
+                    }
                 }
             }
 
             &__check {
                 background-color: $couleur-tertiaire;
-                position: relative;
-                right: 0;
                 width: 0px;
                 color: white;
                 line-height: 70px;
@@ -90,8 +99,10 @@
 
             &:hover {
                 cursor: pointer;
+
                 .card__check {
-                    width: 80px;
+                    width: 60px;
+
                     .fa-circle-check {
                         animation: animation_check_circles 500ms ease-out;
                     }
