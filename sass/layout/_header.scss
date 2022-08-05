@@ -5,6 +5,9 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        @include tablette-size {
+            height: 120px;
+        }
         &__retour {
             border: 0;
             background: none;
@@ -17,9 +20,18 @@ header {
             left: 0;
             height: 63px;
             width: 63px;
+            @include tablette-size {
+                height: 120px;
+                width: 80px;
+                font-size: 40px;
+                line-height: 120px;
+            }
         }
         &__img {
             width: 164px;
+            @include tablette-size {
+                width: 300px;
+            }
         }   
     }
 }

@@ -40,7 +40,6 @@
 }
 
 body {
-  width: 375px;
   margin: 0;
 }
 
@@ -59,6 +58,11 @@ p {
 h2 {
   font-size: 25px;
 }
+@media screen and (min-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
 
 .titre {
   margin: 0 0 30px 20px;
@@ -75,6 +79,11 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 767px) {
+  header .logo {
+    height: 120px;
+  }
+}
 header .logo__retour {
   border: 0;
   background: none;
@@ -88,8 +97,21 @@ header .logo__retour {
   height: 63px;
   width: 63px;
 }
+@media screen and (min-width: 767px) {
+  header .logo__retour {
+    height: 120px;
+    width: 80px;
+    font-size: 40px;
+    line-height: 120px;
+  }
+}
 header .logo__img {
   width: 164px;
+}
+@media screen and (min-width: 767px) {
+  header .logo__img {
+    width: 300px;
+  }
 }
 
 .footer {
@@ -257,6 +279,13 @@ header .logo__img {
     height: initial;
   }
 }
+@media screen and (min-width: 767px) {
+  .accueil__fonctionnement__conteneur {
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+  }
+}
 .accueil .etape {
   height: 74px;
   width: 322px;
@@ -307,39 +336,42 @@ header .logo__img {
   background-color: white;
   box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.21);
 }
+.accueil .card__newCard {
+  width: 80px;
+  margin: 10px 0 0 0;
+  height: 30px;
+  font-size: 15px;
+  background-color: #99E2D0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  right: 30px;
+  z-index: 2;
+  color: #2c9c81;
+}
+.accueil .card__newCard--hidden {
+  display: none;
+}
 .accueil .card__image {
   height: 174px;
   width: 100%;
   object-fit: cover;
+  position: relative;
 }
 .accueil .card__titre {
   margin: 15px auto 5px 15px;
   font-size: 17px;
+  position: relative;
 }
 .accueil .card__localisation {
   margin: 0 auto auto 15px;
   font-size: 16px;
 }
 .accueil .card .hearth {
-  top: -35px;
-  right: -290px;
-}
-.accueil .card__newCard {
-  width: 80px;
-  height: 30px;
-  font-size: 15px;
-  background-color: #99E2D0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2px;
-  position: relative;
-  top: -245px;
-  right: -245px;
-  color: #2c9c81;
-}
-.accueil .card__newCard--hidden {
-  display: none;
+  position: absolute;
+  right: 50px;
+  margin: 20px 0 0 0;
 }
 
 .menu .apparition--1 {
@@ -429,6 +461,11 @@ header .logo__img {
 .menu__photo {
   width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 767px) {
+  .menu__photo {
+    height: 300px;
+  }
 }
 .menu__nomDuRestaurant {
   position: relative;
@@ -545,41 +582,49 @@ header .logo__img {
   margin: 0 15px 15px 15px;
   border-radius: 15px;
   display: flex;
+  flex-wrap: nowrap;
   overflow: hidden;
   position: relative;
+  background-color: #99E2D0;
 }
 .menu__entreePlatsDessert .card__contenu {
-  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   padding: 0 0 0 10px;
-  flex: 1;
-  flex-direction: column;
+  background-color: white;
+  transition: all 700ms ease-out;
 }
 .menu__entreePlatsDessert .card__contenu__titre {
+  width: 100%;
   margin: 10px 0 5px 0;
   font-size: 17px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 .menu__entreePlatsDessert .card__contenu__precision {
   display: flex;
-  flex: 1;
-  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  margin: 0;
 }
 .menu__entreePlatsDessert .card__contenu__precision__description {
-  margin: 0;
-  width: 270px;
-  font-size: 16px;
+  display: inline-block;
   text-overflow: ellipsis;
-  overflow: hidden;
+  overflow-x: hidden;
   white-space: nowrap;
-  transition: all 500ms ease-out;
+  font-size: 15px;
 }
 .menu__entreePlatsDessert .card__contenu__precision__prix {
   font-size: 16px;
-  margin: 0 20px 0 20px;
+  width: 45px;
+  right: 0;
 }
 .menu__entreePlatsDessert .card__check {
-  background-color: #99E2D0;
+  position: relative;
   width: 0px;
   color: white;
   line-height: 70px;
@@ -594,8 +639,8 @@ header .logo__img {
 .menu__entreePlatsDessert .card:hover {
   cursor: pointer;
 }
-.menu__entreePlatsDessert .card:hover .card__contenu__precision__description {
-  width: 200px;
+.menu__entreePlatsDessert .card:hover .card__contenu {
+  width: calc(100% - 60px);
 }
 .menu__entreePlatsDessert .card:hover .card__check {
   width: 60px;

@@ -12,6 +12,9 @@ p {
 
 h2 {
     font-size: 25px;
+    @include tablette-size {
+        font-size: 40px;
+    }
 }
 
 .titre {
