@@ -1,10 +1,9 @@
 .menu {
 
-    @include animation-apparition-with-delay;
-
     &__photo {
         width: 100%;
         object-fit: cover;
+
         @include tablette-size {
             height: 300px;
         }
@@ -30,18 +29,25 @@
 
     &__entreePlatsDessert {
         margin-bottom: 40px;
-
-        &__titre {
-            position: relative;
+        &__titreTypePlats {
             @include animation-apparition-with-delay;
-            text-decoration: underline;
-            text-decoration-color: $couleur-tertiaire;
-            text-decoration-thickness: 3px;
-            text-underline-offset: 10px;
+            margin: 0 0 0 20px;
+            &__titre {
+                position: relative;
+                margin-bottom: 0;
+            }
+            &__sousLigne {
+                height: 3px;
+                width: 40px;
+                background-color: $couleur-tertiaire;
+                margin: 10px 0 15px 0;
+            }
         }
+        
 
         .card {
             @include ombre;
+            @include animation-apparition-with-delay;
             height: 70px;
             margin: 0 15px 15px 15px;
             border-radius: 15px;
