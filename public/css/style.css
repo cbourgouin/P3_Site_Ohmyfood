@@ -161,12 +161,6 @@ header .logo__img {
   position: relative;
   z-index: 3;
 }
-.checkbox:hover {
-  cursor: pointer;
-}
-.checkbox:hover + .fa-solid {
-  opacity: 1;
-}
 
 .hearth {
   height: 25px;
@@ -190,6 +184,12 @@ header .logo__img {
   position: absolute;
   top: 0;
   left: 0;
+}
+.hearth:hover {
+  cursor: pointer;
+}
+.hearth:hover .fa-solid {
+  opacity: 1;
 }
 
 .loading_spinner {

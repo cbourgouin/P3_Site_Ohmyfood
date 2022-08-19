@@ -5,16 +5,10 @@
     margin: 0;
     position: relative;
     z-index: 3;
-
-    &:hover {
-        cursor: pointer;
-        & + .fa-solid {
-            opacity: 1;
-        }
-    }
 }
 
 .hearth {
+
     height: 25px;
     width: 25px;
     position: relative;
@@ -37,5 +31,12 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        & .fa-solid {
+            opacity: 1;
+        }
     }
 }
