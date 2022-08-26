@@ -153,15 +153,6 @@ header .logo__img {
   background: linear-gradient(355deg, #a16be0 0%, #ff93e1 90%);
 }
 
-.checkbox {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  margin: 0;
-  position: relative;
-  z-index: 3;
-}
-
 .hearth {
   height: 25px;
   width: 25px;
@@ -301,6 +292,8 @@ header .logo__img {
   .accueil .etape {
     width: initial;
     flex: 1;
+    flex-direction: column;
+    height: 83px;
   }
 }
 .accueil .etape:hover {
@@ -318,12 +311,33 @@ header .logo__img {
   position: relative;
   left: -12px;
 }
+@media screen and (min-width: 767px) {
+  .accueil .etape__num {
+    position: relative;
+    left: 0px;
+    top: -12px;
+  }
+}
 .accueil .etape__icon {
   color: #7E7E7E;
-  margin: auto 20px auto 10px;
+  margin: auto 20px auto;
+}
+@media screen and (min-width: 767px) {
+  .accueil .etape__icon {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    top: -12px;
+  }
 }
 .accueil .etape__description {
   font-weight: bold;
+}
+@media screen and (min-width: 767px) {
+  .accueil .etape__description {
+    margin: 0;
+    top: -12px;
+  }
 }
 .accueil__restaurants {
   background-color: #f7f7f7;
@@ -378,6 +392,7 @@ header .logo__img {
 .menu__photo {
   width: 100%;
   object-fit: cover;
+  height: 257px;
 }
 @media screen and (min-width: 767px) {
   .menu__photo {

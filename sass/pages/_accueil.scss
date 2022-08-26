@@ -121,6 +121,8 @@
         @include tablette-size {
             width: initial;
             flex: 1;
+            flex-direction: column;
+            height: 83px;
         }
 
         &:hover {
@@ -138,15 +140,30 @@
             background-color: $couleur-primaire;
             position: relative;
             left: -12px;
+            @include tablette-size {
+                position: relative;
+                left: 0px;
+                top: -12px;
+            }
         }
 
         &__icon {
             color: #7E7E7E;
-            margin: auto 20px auto 10px;
+            margin: auto 20px auto;
+            @include tablette-size {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                top: -12px;
+            }
         }
 
         &__description {
             font-weight: bold;
+            @include tablette-size {
+                margin: 0;
+                top: -12px;
+            }
         }
     }
 

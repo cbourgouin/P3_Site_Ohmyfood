@@ -3,6 +3,7 @@
     &__photo {
         width: 100%;
         object-fit: cover;
+        height: 257px;
 
         @include tablette-size {
             height: 300px;
