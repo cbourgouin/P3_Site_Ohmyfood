@@ -108,19 +108,17 @@
 
     .etape {
         height: 74px;
-        width: 322px;
         display: flex;
+        flex: 1;
         align-items: center;
         background-color: #F6F6F6;
         border-radius: 20px;
-        margin: 0 auto 25px 35px;
+        margin: 0 35px 25px 35px;
         transition: all 400ms;
 
         @include ombre;
 
         @include tablette-size {
-            width: initial;
-            flex: 1;
             flex-direction: column;
             height: 83px;
         }
