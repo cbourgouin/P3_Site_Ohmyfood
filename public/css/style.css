@@ -275,7 +275,6 @@ header .logo__img {
   .accueil__fonctionnement__conteneur {
     display: flex;
     flex-direction: row;
-    margin-right: 35px;
   }
 }
 .accueil .etape {
@@ -334,6 +333,7 @@ header .logo__img {
 }
 @media screen and (min-width: 767px) {
   .accueil .etape__description {
+    text-align: center;
     margin: 0;
     top: -12px;
   }

@@ -101,7 +101,6 @@
             @include tablette-size {
                 display: flex;
                 flex-direction: row;
-                margin-right: 35px;
             }
         }
     }
@@ -159,6 +158,7 @@
         &__description {
             font-weight: bold;
             @include tablette-size {
+                text-align: center;
                 margin: 0;
                 top: -12px;
             }
